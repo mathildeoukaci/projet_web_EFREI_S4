@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width">
+    <meta charset="UTF-8">
+    <title>Prédictions</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/prediction.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+<header>
+    <div class="menu">
+        <ul>
+            <li><a href="homepage.html">Accueil</a></li>
+            <li class="active"><a href="prediction.html">Prédictions</a></li>
+            <li><a href="compatibilite.html">Compatibilité</a></li>
+            <li><a href="astro.html">Astro</a></li>
+             <li><a href="personnalite.html">Personnalité</a></li>
+            <div class="dropdown">
+                <li class="dropbtn"><a href="#">Contacts</a></li>
+                  <div class="dropdown-content">
+                      <a href="boule_de_cristal.html">• Boule de cristal</a>
+                      <a href="supprimer_contact.html">• Perdre contact</a>
+                  </div>
+            </div>
+        </ul>
+    </div>
+</header>
+
+<main class="contenu">
+
+    <div>
+        <form action="#" method="post" onsubmit="return false">
+            <div class="question-box">
+                <div>
+                    <p>Vous avez des doutes et des interrogations dans votre vie ? <br>Votre avenir est incertain ?</p>
+                    <p>Notre <span>donneur de réponses</span> créé par de véritables voyants est là pour vous aider !</p>
+                </div>
+                    <input type="text" name="question" id="question_place" placeholder= "Posez votre question ici">
+
+                <div class="question-zone-btn">
+                    <button class="btn_arrondi" type="submit" id="boutons_question" onclick="dire_avenir()">Voir la réponse</button>
+                    <button class="btn_arrondi" type="reset" id="boutons_question" name="supprimer" onclick="toutSupp()">Effacer</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</main>
+
+<footer>
+    <div class="footer_bar">
+        <p>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="https://www.instagram.com/efreidivination/" class="fa fa-instagram"></a>
+            <a href="#" class="fa">| Qui sommes-nous ?</a>
+        </p>
+
+        <p class="footer_texte">© 2020 | Un site des Mathildes et Antonin | DROGUET Mathilde | OUKACI Mathilde | VELLARD Antonin</p>
+    </div>
+</footer>
+
+<script type="text/javascript" src="assets/js/predictions.js"></script>
+</body>
+
+
+</html>

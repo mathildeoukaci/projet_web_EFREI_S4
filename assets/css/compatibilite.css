@@ -1,0 +1,230 @@
+*{
+    font-family:  "Poppins", sans-serif;
+}
+
+/*Header*/
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: url("../images/nebula.jpg") top center;
+    background-repeat: no-repeat;
+    
+    height: 100vh;
+    background-size: cover;
+    background-position: relative;
+
+    text-align: center;
+}
+
+header ul{
+    position: relative;
+    z-index: 5;
+    text-align: center;
+    list-style-type: none;
+    margin-top: 0px;
+
+    /*Réglages background menu*/
+    background: rgba(12, 11, 9, 0.3);
+    border-bottom: 1px solid rgba(12, 11, 9, 0.2);
+    -webkit-box-shadow: 0px 7px 16px -2px rgba(0,0,0,0.36);
+    -moz-box-shadow: 0px 7px 16px -2px rgba(0,0,0,0.36);
+    box-shadow: 0px 7px 16px -2px rgba(0,0,0,0.36);
+
+    padding: 30px 0;
+
+    /*Fin réglages background menu*/
+}
+
+header ul li{
+    display: inline-block;
+} 
+
+header ul li a{
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+    font-size: 25px;
+    font-weight: lighter;
+    padding: 0 25px;
+}
+
+header ul li a:hover{
+    color: #C5A172;
+}
+
+header ul li.active a{
+    color:  #C5A172;
+}
+
+/*Dropdown*/
+.dropdown-content a:hover {
+    background-color: rgba(12, 11, 9, 0.4);
+    color: #C5A172;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: transparent;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  text-align: left;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: block;
+}
+/*-----Fin dropdown-----*/
+/*----------Fin header----------*/
+
+
+
+.zone-btn{
+    padding-bottom: 20px;
+}
+
+
+#myProgress {
+    width:  750px;
+    height: 30px;
+    position: relative;
+    background-color: #ddd;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+#myBar {
+    background-color: #C5A172;
+    width: 10%;
+    height: 30px;
+    position: relative;
+    color: #1C4414;
+}
+
+
+/*Footer*/
+footer{
+
+    z-index: 5;
+
+    bottom: 0;
+    color: #fff;
+    position: fixed;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: rgba(12, 11, 9, 0.3);
+    font-weight: none;
+
+    padding: 0px;
+    -webkit-box-shadow: 1px -12px 16px -2px rgba(0,0,0,0.36);
+    -moz-box-shadow: 1px -12px 16px -2px rgba(0,0,0,0.36);
+    box-shadow: 1px -12px 16px -2px rgba(0,0,0,0.36);
+}
+
+.footer_texte{
+    font-size: 11px;
+}
+
+footer a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.fa{
+    padding: 0px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa:hover {
+    color: #C5A172;
+}
+
+.footer_bar{
+    text-align: center;
+}
+/*----------Fin footer----------*/
+/*Contenu*/
+.formulaire{
+
+    background-color: rgba(0, 0, 0, 0.4) ;
+    /*box-shadow: 8px 8px 8px #aaa;*/
+    color: white;
+
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+
+    width: 750px;
+}
+input:not(:placeholder-shown) {
+    border-color: #C5A172;
+    caret-color: black;
+}
+.element{
+  background-color:transparent;
+  border: none;
+  border-bottom: 1px solid #C5A172;
+  outline: none;
+  font-size: 16px;
+  color: white;
+  caret-color: black;
+}
+
+div.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.boutons{
+    border: none;
+    outline: none;
+    box-shadow: 4px 4px 4px #aaa;
+    margin: auto;
+}
+
+.boutons:hover{
+    background-color: #CECECE;
+}
+
+.main{
+     background-color: white ;
+     box-shadow: 8px 8px 8px #aaa;
+     text-align: center;
+     margin-left: auto;
+     margin-right: auto;
+     width: 750px;
+     margin-top:25px;
+}
+th{
+    width: 1000px;
+}
+/*----------Fin contenu----------*/

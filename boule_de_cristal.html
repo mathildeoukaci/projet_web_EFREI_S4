@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width">
+    <meta charset="UTF-8">
+    <title>Boule de cristal</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/boule_de_cristal.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body onload="accueil()">
+<header>
+    <div class="menu">
+        <ul>
+            <li><a href="homepage.html">Accueil</a></li>
+            <li><a href="prediction.html">Prédictions</a></li>
+            <li><a href="compatibilite.html">Compatibilité</a></li>
+            <li><a href="astro.html">Astro</a></li>
+             <li><a href="personnalite.html">Personnalité</a></li>
+            <div class="dropdown">
+                <li class="dropbtn active"><a href="#">Contacts</a></li>
+                  <div class="dropdown-content">
+                      <a href="boule_de_cristal.html">• Boule de cristal</a>
+                      <a href="supprimer_contact.html">• Perdre contact</a>
+                  </div>
+            </div>
+        </ul>
+    </div>
+</header>
+
+<main>
+
+
+    <div class="clairvoyance">
+        <img id="clairvoyance_ball_image" src="./assets/images/clairvoyance_ball.png" alt="boule_de_cristal" onmouseover="afficher_gif()" onmouseout="afficher_clairvoyance_ball()" />
+        <img id="sparkle_gif" src="./assets/images/sparkle.gif" alt="sparkle_gif" onmouseover="afficher_gif()"/>
+    </div>
+
+
+    <div class="contacter">
+        <div class="titre_contacter">
+            <p>Caressez la boule de cristal pour contacter l'au-delà</p>
+        </div>
+        <div id="suite_contacter">
+            <div class="photo_aude">
+                <p><span>AUDE EULA</span></p>
+                <img id="aude_eula" src="./assets/images/aude_eula.jpg" alt="aude_eula" />
+            </div>
+            <div class="texte_aude">
+                <p>SPÉCIALITÉ :</p>
+                <p>Numérologue - Médium</p>
+                <p>SON SIGNE ASTRO :</p>
+                <p>Capricorne</p>
+            </div>
+            <div class="description_aude">
+                <p>DESCRIPTION :</p>
+                <p>Mon don de voyance me vient de ma grand-mère,<br>et je le porte en moi comme un cadeau du ciel.<br>Je vous offre ma clairvoyance<br>pour résoudre toutes vos interrogations.<br>Contactez-moi sans plus attendre, j'illuminerai votre route.<br><br>PS: N'oubliez pas de jeter un oeil à mon instagram.</p>
+            </div>
+        </div>    
+    </div>
+
+</main>
+
+<footer>
+    <div class="footer_bar">
+        <p>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="https://www.instagram.com/efreidivination/" class="fa fa-instagram"></a>
+            <a href="#" class="fa">| Qui sommes-nous ?<a>
+        </p>
+
+        <p class="footer_texte">© 2020 | Un site des Mathildes et Antonin | DROGUET Mathilde | OUKACI Mathilde | VELLARD Antonin</p>
+    </div>
+</footer>
+</body>
+<script type="text/javascript">
+    
+
+    function accueil(){
+        afficher_clairvoyance_ball();
+        cacher_suite_contacter();
+    }
+
+    function sur_clairvoyance(){
+        afficher_gif();
+    }
+
+    function sur_gif(){
+        document.getElementById("sparkle_gif").style.display = "block";
+    }
+
+    function afficher_clairvoyance_ball(){
+        document.getElementById("clairvoyance_ball_image").style.display = "block";
+        document.getElementById("sparkle_gif").style.display = "none";
+        cacher_suite_contacter();
+    }
+
+    function afficher_gif(){ 
+        document.getElementById("sparkle_gif").style.display = "block";
+        afficher_suite_contacter();
+        
+    }
+
+    function cacher_suite_contacter(){
+        document.getElementById("suite_contacter").style.display = "none";
+    }
+
+    function afficher_suite_contacter(){
+        document.getElementById("suite_contacter").style.display = "block";
+    }
+
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

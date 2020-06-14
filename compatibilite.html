@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width">
+    <meta charset="UTF-8">
+    <title>Compatibilité</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/compatibilite.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body onload="accueil()">
+<header>
+    <div class="menu">
+        <ul>
+            <li><a href="homepage.html">Accueil</a></li>
+            <li><a href="prediction.html">Prédictions</a></li>
+            <li  class="active"><a href="compatibilite.html">Compatibilité</a></li>
+            <li><a href="astro.html">Astro</a></li>
+             <li><a href="personnalite.html">Personnalité</a></li>
+            <div class="dropdown">
+                <li class="dropbtn"><a href="#">Contacts</a></li>
+                  <div class="dropdown-content">
+                      <a href="boule_de_cristal.html">• Boule de cristal</a>
+                      <a href="supprimer_contact.html">• Perdre contact</a>
+                  </div>
+            </div>
+        </ul>
+    </div>
+</header>
+
+<main>
+    <form class="formulaire" action="#" id="formulaire" onsubmit="return false" method="post">
+
+        <div class=flex class="cadres">
+            <input type="text" name="prenom" id="prenom" placeholder= "Prénom" class="element" required>
+            <p>Date de naissance :</p>
+            <input id="date" type="date" max="" value="">
+            <select name="choix" id="signe">
+                <option value="belier">Bélier</option>
+                <option value="taureau">Taureau</option>
+                <option value="gemeaux">Gémeaux</option>
+                <option value="cancer">Cancer</option>
+                <option value="lion">Lion</option>
+                <option value="vierge">Vierge</option>
+                <option value="balance">Balance</option>
+                <option value="scorpion">Scorpion</option>
+                <option value="sagittaire">Sagitaire</option>
+                <option value="capricorne">Capricorne</option>
+                <option value="verseau">Verseau</option>
+                <option value="poissons">Poissons</option>
+            </select>
+        </div>
+        <div class="zone-btn">
+            <button type="submit" value="ajouter" id="tester" class="boutons enabled" onclick="essaiAjouter();">Ajouter</button>
+            <button type="reset" class="boutons" name="supprimer" onclick="toutSupp()">Tout Supprimer</button>
+            <button type="submit" value="comparer" class="boutons" id="comparer" onclick="mycomparer()">Tester la compatibilité</button>
+        </div>
+    </form>
+    <div class="main">
+        <table id="tabUsers">
+            <thead>
+            <tr>
+                <th>Sélectionner pour comparer</th>
+                <th>Pr&eacutenom</th>
+                <th>date de naissance</th>
+                <th>Signe astro</th>
+            </tr>
+            </thead>
+            <tbody id="body"></tbody>
+        </table>
+    </div>
+
+
+    <div id="myProgress">
+        <div id="myBar"></div>
+    </div>
+
+</main>
+
+<footer>
+    <div class="footer_bar">
+        <p>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="https://www.instagram.com/efreidivination/" class="fa fa-instagram"></a>
+            <a href="#" class="fa">| Qui sommes-nous ?</a>
+        </p>
+
+        <p class="footer_texte">© 2020 | Un site des Mathildes et Antonin | DROGUET Mathilde | OUKACI Mathilde | VELLARD Antonin</p>
+    </div>
+</footer>
+
+</body>
+
+<script>
+//Date d'aujourd'hui
+document.getElementById("date").valueAsDate = new Date();
+
+//Date de naissance limite = aujourd'hui
+var today = new Date();
+var dd = today.getDate();
+var mm = today.getMonth()+1;
+var yyyy = today.getFullYear();
+ if(dd<10){
+        dd='0'+dd
+    } 
+    if(mm<10){
+        mm='0'+mm
+    } 
+
+today = yyyy+'-'+mm+'-'+dd;
+document.getElementById("date").setAttribute("max", today);
+
+</script>
+
+<script type="text/javascript" src="assets/js/compatibilite.js"></script>
+
+</html>
